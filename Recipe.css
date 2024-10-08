@@ -1,0 +1,109 @@
+*{
+  margin:0px ;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  background-color: #2b1d0f;
+  color: #fff;
+}
+header nav{
+  background-color:#212121;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 1px;
+}
+ header nav h1{
+   font-size: 26px;
+   font-weight: 700px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   
+ }
+ header nav form{
+  display: flex;
+  justify-content: center;
+ }
+ form input[type="Text"]{
+  flex-grow:1;
+  margin-right: 10px;
+
+ }
+ form input[type="Text"],button[type="submit"]{
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 4px;
+
+ }
+  form button[Type="submit"]{
+    background-color: #b6520f;
+    cursor: pointer;
+    color: #fff;
+    transition:background-color : 0.2s,ease-in-out ;
+  }
+  form button[Type="submit"]:hover,.recipe button:hover{
+    background-color: #ff5c5c;
+  }
+  .recipe-container{
+  
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:40px;
+    width:80%;
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+  }
+  .recipe{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1)  -5px -5px 10px rgba(34, 34, 34, 0.5) ;
+    cursor: pointer;
+    max-width: 350px;
+  }
+  .recipe img{
+    height: 300px;
+  }
+  .recipe h3{
+    font-size: 24px;
+    margin-block: 5px;
+  }
+  .recipe p{
+    font-size: 20px;
+    color: #4a4a4a;
+    margin: 5px 0 ;
+  }
+  .recipe span{
+    font-weight: bold;
+  }
+  .recipe button{
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 18px auto;
+    background-color: #f44336;
+    color: #fff;
+  }
+
+  @media screen and (max-width:600px){
+    header nav {
+      flex-direction: column;
+    }
+    header nav form{
+      width: 80%;
+      margin-top: 20px;
+    }
+  }
+ 
